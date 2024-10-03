@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Semibold';
+    src: url('../fonts/Graphik-Semibold.eot');
+    src: url('../fonts/Graphik-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Graphik-Semibold.woff') format('woff'),
+        url('../fonts/Graphik-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.work-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.website-background-white {
+    background: rgb(211, 211, 211);
+}
+
+    .text-color-gray {
+        text-align: right;
+        margin-right: 5%;
+        color: #888888;
+    }
+
+.logo-inner {
+	position: fixed;
+	top: 10%;
+    margin-left: 85%;
+	z-index: 999;
+}
+		@media screen and (max-width: 767px) {
+			.logo-inner {
+				top: 5%;
+				left: 0%;
+			}
+            .work-grid{
+                grid-template-columns: 1fr;
+            }
+		}
+
+.max-width-left-70 {
+    max-width: 70%;
+}
+
+@media screen and (max-width: 767px) {
+    .max-width-left-70 {
+        max-width: 100%;
+    }
+}
+
+/* .top-bottom-margin {
+    margin: 40vh 0 20vh 0;
+    margin: 35vh 0 20vh 0;
+    margin: 35vh 0 30vh 0;
+} */
+
+.hide-text-block {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.text-color {
+    color: rgb(0, 0, 0)
+}
+
+
+h2 {
+	font-family:'Semibold';
+	line-height: 140%;
+	font-size: 100px;
+    text-align: center;
+    font-size: 6em;
+    margin: 15%;
+}
+
+h3 {
+	font-family:'Semibold';
+	line-height: 120%;
+	font-size: 64px;
+	/* font-size: 1.780em; */
+}
+
+h4 {
+	font-family:'Semibold';	
+	line-height: 140%;
+	font-size: 48px;
+	font-size: 40px;
+    margin-left: 10%;
+	/* margin: 16vh 0 4vh 0;
+	margin: 24vh 0 4vh 0; */
+}
+		@media screen and (max-width: 767px) {
+			h4 {
+			font-size: 30px;
+			}
+		}
+h5 {
+	font-family:'Semibold';
+	line-height: 140%;
+	font-size: 36px;
+	font-size: 30px;
+    margin-left: 10%;
+	/* margin: 12vh 0 5vh 0;
+	margin: 12vh 0 3vh 0; */
+	
+
+}
+		@media screen and (max-width: 767px) {
+			h5 {
+				font-size: 20px;
+			}
+		}
+h6 {
+	font-family: "Semibold";
+	line-height: 140%;
+	font-size: 24px;
+	margin: 8vh 0 2vh 0;	
+}	
+
+p {
+	line-height: 170%;
+    margin-left: 10%;
+	font-family:'Regular';
+	font-size: 20px;
+	margin-bottom: 3vh;
+}
+
+
+.animate {
+	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+
+
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(30vh);} /* WORK ON THISSS! */
+/* 	0% {transform: translateY(100%);} */
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+.delay02 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+/* ------ Links ------ */
+a, a:after, a:visited {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000000;	
+}
+.links a {
+	display: block;
+	margin: 4vh 0;
+    margin-left: 10%;
+	font-family: "Medium";
+	font-size: 19px;	
+}
+
+/* ------ Hover states ------ */
+.on-hover-40, .on-hover--40 {
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+	margin-left: 40px;
+    color: #ea0f1e;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+/* .on-hover--40:hover {
+	margin-left: -40px;
+    color: #ea0f1e;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+		@media screen and (max-width: 767px) {
+			.on-hover-40:hover {
+				margin-left: 0px;	
+			}
+			.on-hover--40:hover {
+				margin-left: 0px;
+			}	
+		} */
+
